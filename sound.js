@@ -51,8 +51,8 @@ function draw() {
   analysis.getByteFrequencyData(bins);
 
   fill("white");
-
-  const bar_width = (width * 2.75) / bins.length;
+  const changed_width = width * 2.75;
+  const bar_width = changed_width / bins.length;
   for (let i = 0; i < bins.length; i++) {
     const bar_height = bins[i] * 2;
     fill(255 - i, 255 - i * 2, 255 - i * 3);
