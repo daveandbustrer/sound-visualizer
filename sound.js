@@ -52,11 +52,15 @@ function draw() {
 
   fill("white");
 
-  const bar_width = width / 128;
-  console.log(bins.length);
+  const bar_width = (width * 2.75) / bins.length;
   for (let i = 0; i < bins.length; i++) {
-    const bar_height = bins[i];
-    console.log(i);
-    rect(100 + i * bar_width, height / 2 - bar_height, bar_width, bar_height);
+    const bar_height = bins[i] * 2;
+    fill(255 - i, 255 - i * 2, 255 - i * 3);
+    rect(
+      bar_width / 2 + i * bar_width,
+      height - bar_height,
+      bar_width,
+      bar_height,
+    );
   }
 }
