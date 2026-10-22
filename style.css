@@ -1,0 +1,17 @@
+html {
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+.sound {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  z-index: 1;
+}
+.canvas {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
